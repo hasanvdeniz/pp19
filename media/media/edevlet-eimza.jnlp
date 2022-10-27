@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="https://static.turkiye.gov.tr/downloads/e-imza"  href="edevlet-eimza.jnlp">
+	
+    <information>
+        <title>E-Devlet E-Imza Uygulaması</title>
+        <vendor>Turksat</vendor>
+        <homepage href="https://www.turkiye.gov.tr"/>
+        <description>E-Devlet E-Imza Uygulaması</description>
+        <icon href="e-imza-icon64.png" width="64" height="64"/>
+        <icon kind="splash" href="e-imza-icon256.png" width="256" height="256"/>
+        <offline-allowed/>
+        <shortcut online="true">
+            <desktop/>
+            <menu submenu="E-Devlet E-Imza Uygulaması"/>
+        </shortcut>
+
+    </information>
+
+
+    <security>
+        <all-permissions />
+    </security>
+
+    <resources>
+        <j2se version="1.7+" href="http://java.sun.com/products/autodl/j2se" />
+        <jar href="elektronik-imza.jar" main="true" />
+        <property name="jnlp.packEnabled" value="true" />
+        <property name="java.net.preferIPv4Stack" value="true"/>
+    </resources>
+	
+    <application-desc name="E-Devlet E-Imza Uygulaması" main-class="tr.gov.turkiye.esignui.run.StartFrame">
+    </application-desc>
+	
+    <update check="always" policy="always"/>
+	
+</jnlp>
